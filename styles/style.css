@@ -1,0 +1,96 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Hachi+Maru+Pop&family=Lalezar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face{
+    font-family: "Open Sans", sans-serif;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+.roboto{
+    font-family: "Open Sans";
+    font-weight: bolder;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+/* navbar */
+@media screen and (min-width: 768px){
+    .position-md-fixed{
+        position: fixed;
+    }
+}
+.course-list{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px 0;
+}
+.course-list-item{
+display: flex;
+padding: 10px 15px;
+}
+.course-list-item:hover{
+    background: rgb(240, 240, 240);
+}
+
+/* header background */
+
+.header{
+    background: url(../images/header/header-bg.png) top center no-repeat;
+    background-size: cover;
+}
+
+/* shadow */
+.counter-box {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* services */
+.service-box{
+    /* the below link is shadow link */
+    /* https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-bottom: 4px solid;
+    border-radius: 5px;
+    transition: all 0.3s;
+    &:hover{
+        color: white;
+    }
+}
+.service-box:hover{
+    background: #0d6efd;
+}
+.service-box.border-success:hover{
+    background: #198754;
+}
+.service-box.border-warning:hover{
+    background: #ffc107;
+}
+
+.read-more{
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.service-box:hover .read-more{
+    color: white !important;
+}
+
+/* pricing */
+.pricing-box{
+    transition: all 0.5s;
+}
+.pricing-box:hover{
+    transform: scale(1.05);
+}
+
+/* footer */
+footer{
+    background: #f2f5fc;
+}
